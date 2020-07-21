@@ -7,8 +7,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         String fileName = "Countries.csv";
-        Map<String, Country> countries;
-        countries = ReadData.readDataFromFile(fileName);
+        Map<String, Country> countries = ReadData.readDataFromFile(fileName);
         if (countries.size() != 0) {
             System.out.println(WriteData.writeToString(countries));
 
